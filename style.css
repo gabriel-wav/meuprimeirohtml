@@ -1,0 +1,47 @@
+.background-div {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url(metal1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.background-div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Cor preta com 50% de transparência */
+}
+
+.background-div h1 {
+    position: relative;
+    color: white;
+    /* Para garantir a legibilidade sobre o fundo escuro */
+    z-index: 1;
+    /* Para garantir que o texto fique acima da sobreposição */
+    text-align: center;
+    padding-top: 150px;
+}
+
+body {
+color: #FFFFFF; /* Cor branca */
+background-image: url(guitarrafundo.jpg); /* URL da imagem de fundo */
+background-size: cover; /* Redimensiona a imagem para cobrir toda a página */
+background-position: center; /* Posiciona a imagem no centro da página */
+background-repeat: repeat; /* Não repete a imagem */
+}
+
+.img-site {
+display: block; 
+margin: 10px 0; 
+width: 400px; 
+height: 400px; 
+margin-top: 200px;
+}
+
